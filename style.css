@@ -1,0 +1,647 @@
+nav {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 23px;
+}
+
+.logo {
+    width: 165px;
+    padding-top: 27px;
+    padding-left: 18px;
+}
+
+.menu {
+    margin-top: 41px;
+    margin-left: 100px;
+    display: grid;
+    gap: 34px;
+    grid-auto-flow: column;
+    color: gray;
+}
+
+.nav-right {
+    display: flex;
+    gap: 34px;
+    margin-left: 49px;
+}
+
+.nav-right a {
+    margin-top: 37px;
+    width: 33px;
+}
+
+.nav-right a:hover {
+    color: green;
+}
+
+.menu-icon {
+    background: green;
+    border-radius: 50%;
+    color: black;
+    height: 46px;
+    width: 52px;
+    margin-top: 23px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.container {
+    margin-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.text-1 {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: -68px;
+}
+
+.text-1 p {
+    font-size: 17px;
+    text-align: center;
+    padding-top: 68px;
+    color: orange;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+
+
+}
+
+.text-1 h2 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+    color: black;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.left-img {
+    left: 0;
+    margin-top: -230px;
+}
+
+.right-img {
+    position: absolute;
+    right: 0;
+    margin-top: -237px;
+}
+
+
+.img1 {
+    z-index: 1;
+}
+
+.img2 {
+    z-index: -1;
+
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 53px;
+    height: 500px;
+}
+
+.green-bg {
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+    width: 900px;
+    height: 900px;
+}
+
+.shop-btn {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f0a22e;
+    color: white;
+    padding: 18px 80px;
+    border-radius: 61px;
+    font-weight: bold;
+    border: 4px solid white;
+    z-index: 10;
+    cursor: pointer;
+    padding: 14px 45px;
+    font-size: 16px;
+}
+
+.product {
+    position: absolute;
+    width: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    z-index: 5;
+    top: 26%;
+    width: 481px;
+}
+
+.left-powder {
+    position: absolute;
+    bottom: -3%;
+    left: 37px;
+    z-index: -1;
+    width: 211px;
+}
+
+.right-bowl {
+    position: absolute;
+    bottom: 10px;
+    right: 44px;
+    z-index: 6;
+    width: 170px;
+}
+
+.leaf-left {
+    position: absolute;
+    width: 120px;
+    top: -20px;
+    left: -20px;
+    z-index: 7;
+}
+
+.leaf-right {
+    position: absolute;
+    width: 160px;
+    top: 0;
+    right: 0;
+    z-index: 7;
+}
+
+.leaf-middle {
+    position: absolute;
+    width: 140px;
+    right: 160px;
+    bottom: 220px;
+    z-index: 7;
+}
+
+.container1 {
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.container1 p {
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .095em;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 290px;
+    height: 100px;
+    object-fit: none;
+}
+
+.features-area ::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -41px;
+    width: 100%;
+    height: 41px;
+    background-image: url(https://suxnix-dev.myshopify.com/cdn/shop/t/2/assets/features_shape01.png);
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+.features-bg {
+    background-position: center;
+    background-size: cover;
+    padding: 97px 0;
+    position: relative;
+    margin: 37px 0 44px;
+    width: 99%;
+    height: 661px;
+    background-position: center;
+    background-size: cover;
+    padding: 97px 0;
+    position: relative;
+    margin: 37px 0 44px;
+    margin-top: 100px;
+}
+
+.left-2 {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.content-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 481px;
+    height: 0;
+    margin-left: 84px;
+    gap: 28px;
+    text-align: start;
+    color: white;
+    column-gap: 46px;
+}
+
+.content-2 img {
+    width: 88px;
+}
+
+.content-2 h4 {
+    font-size: 19px;
+    text-align: start;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.content-2 p {
+    margin-top: 10px;
+}
+
+.left2-text {
+    width: 267px;
+}
+
+
+.right-2 img {
+    position: absolute;
+    right: 0%;
+    z-index: 0;
+}
+
+.features-bg:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    width: 100%;
+    height: 50px;
+    background-image: url(https://suxnix-dev.myshopify.com/cdn/shop/t/2/assets/features_shape02.png);
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+.section-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.left-3 {
+    margin-left: 36px;
+}
+
+.feature-products ::before {
+    content: "";
+    position: absolute;
+    left: 38%;
+    top: 50%;
+    background-image: url(https://suxnix-dev.myshopify.com/cdn/shop/t/2/assets/features_product_dots.png);
+    width: 706px;
+    height: 706px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translate(-50%, -50%);
+}
+
+.main-img {
+    margin-top: 100px;
+    position: absolute;
+    z-index: 0;
+    left: 159px;
+}
+
+.bg-img {
+    position: absolute;
+    margin-top: 350px;
+    z-index: -1;
+}
+
+.feature-products::after {
+    content: "";
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 7px;
+    width: 230px;
+    height: 46px;
+    background: #464646;
+    filter: blur(30px);
+    border-radius: 99px;
+    z-index: -1;
+}
+
+.title {
+    font-size: 50px;
+    margin-top: 122px;
+}
+
+.title a {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.title a:hover {
+    color: orange;
+}
+
+.title a:after {
+    content: "";
+    display: block;
+    background-image: url(https://suxnix-dev.myshopify.com/cdn/shop/t/2/assets/title_shape.svg);
+    width: 79px;
+    height: 14px;
+    background-repeat: no-repeat;
+    margin: 18px 0 33px;
+}
+
+.title h6 {
+    margin-top: 39px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.title p {
+    font-size: 16px;
+    margin-top: 23px;
+    margin-right: 171px;
+    color: gray;
+}
+
+.product-btn {
+    display: flex;
+}
+
+.shop-btn1 {
+    position: relative;
+    top: 27px;
+    left: 13%;
+    transform: translateX(-50%);
+    background: green;
+    color: white;
+    padding: 24px 80px;
+    border-radius: 65px;
+    font-weight: bold;
+    border: 4px solid white;
+    z-index: 10;
+    cursor: pointer;
+    padding: 18px 50px;
+    font-size: 16px;
+}
+
+.shop-btn1:hover {
+    background: orange;
+}
+
+.new-price {
+    font-size: 23px;
+    font-weight: 700;
+    margin-left: 26px;
+    top: 42px;
+    position: relative;
+}
+
+.old-price {
+    color: orange;
+    font-size: 20px;
+    margin-left: 15px;
+    text-decoration: line-through;
+}
+
+.img-3 {
+    position: absolute;
+    right: 0;
+    margin-top: 306px;
+}
+
+.section-4 {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.img-4 {
+    position: absolute;
+    left: 0;
+    margin-top: 146px;
+}
+
+.text-4 {
+    font-size: 50px;
+    margin-left: 153px;
+    margin-top: 138px;
+}
+
+.text-4 a {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.text-4 a:hover {
+    color: orange;
+}
+
+.text-4 h6 {
+    margin-top: 39px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.text-4 p {
+    font-size: 16px;
+    margin-top: 23px;
+    margin-right: 80px;
+    color: gray;
+}
+
+.product-btn1 {
+    display: flex;
+    margin-left: 28px
+}
+
+.right-4 {
+    position: relative;
+    right: 0;
+}
+
+.main-img4 {
+    margin-top: 100px;
+    position: absolute;
+    z-index: 0;
+    left: 159px;
+}
+
+.bg-img4 {
+    position: absolute;
+    margin-top: 350px;
+    z-index: -1;
+    right: 19px;
+    top: -21px;
+}
+
+.section-5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+}
+
+.left-5 {
+    margin-left: 36px;
+}
+
+.feature-products ::before {
+    content: "";
+    position: absolute;
+    left: 38%;
+    top: 50%;
+    background-image: url(https://suxnix-dev.myshopify.com/cdn/shop/t/2/assets/features_product_dots.png);
+    width: 706px;
+    height: 706px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translate(-50%, -50%);
+}
+
+.main-img5 {
+    margin-top: 100px;
+    position: absolute;
+    z-index: 0;
+    left: 159px;
+}
+
+.bg-img5 {
+    position: absolute;
+    margin-top: 350px;
+    z-index: -1;
+}
+
+.feature-products::after {
+    content: "";
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 7px;
+    width: 230px;
+    height: 46px;
+    background: #464646;
+    filter: blur(30px);
+    border-radius: 99px;
+    z-index: -1;
+}
+
+.title5 {
+    font-size: 50px;
+    margin-top: 122px;
+}
+
+.title5 a {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.title5 a:hover {
+    color: orange;
+}
+
+.title5 a:after {
+    content: "";
+    display: block;
+    background-image: url(https://suxnix-dev.myshopify.com/cdn/shop/t/2/assets/title_shape.svg);
+    width: 79px;
+    height: 14px;
+    background-repeat: no-repeat;
+    margin: 18px 0 33px;
+}
+
+.title5 h6 {
+    margin-top: 39px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.title5 p {
+    font-size: 16px;
+    margin-top: 23px;
+    margin-right: 171px;
+    color: gray;
+}
+
+.product-btn5 {
+    display: flex;
+}
+
+.shop-btn5 {
+    position: relative;
+    top: 27px;
+    left: 13%;
+    transform: translateX(-50%);
+    background: green;
+    color: white;
+    padding: 24px 80px;
+    border-radius: 65px;
+    font-weight: bold;
+    border: 4px solid white;
+    z-index: 10;
+    cursor: pointer;
+    padding: 18px 50px;
+    font-size: 16px;
+}
+
+.shop-btn5:hover {
+    background: orange;
+}
+
+.new-price5 {
+    font-size: 23px;
+    font-weight: 700;
+    margin-left: 26px;
+    top: 42px;
+    position: relative;
+}
+
+.old-price5 {
+    color: orange;
+    font-size: 20px;
+    margin-left: 15px;
+    text-decoration: line-through;
+}
+
+.img-5 {
+    position: absolute;
+    right: 0;
+    margin-top: 125px;
+}
