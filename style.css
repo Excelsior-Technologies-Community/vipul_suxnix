@@ -3,10 +3,56 @@ body {
 }
 
 nav {
+    margin-top: -10px;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
     display: flex;
-    padding-top: 15px;
-    padding-bottom: 23px;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    transition: 0.4s ease;
+    height: 110px;
 }
+
+nav li {
+    list-style-type: none;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    font-size: 17px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    width: 200px;
+    border-radius: 8px;
+    padding: 10px 0;
+    display: none;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    padding: 10px 15px;
+}
+
+.dropdown-menu li a {
+    color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 
 .logo {
     width: 165px;
@@ -16,7 +62,7 @@ nav {
 
 .menu {
     margin-top: 41px;
-    margin-left: 100px;
+    margin-left: 61px;
     display: grid;
     gap: 34px;
     grid-auto-flow: column;
@@ -44,7 +90,7 @@ nav {
     color: black;
     height: 46px;
     width: 52px;
-    margin-top: 23px;
+    margin-top: 26px;
     padding-left: 10px;
     padding-top: 10px;
     padding-right: 10px;
@@ -52,7 +98,7 @@ nav {
 }
 
 .container {
-    margin-top: 100px;
+    margin-top: 190px;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -141,6 +187,10 @@ nav {
     font-size: 16px;
 }
 
+.shop-btn:hover {
+    background: green;
+}
+
 .product {
     position: absolute;
     width: 700px;
@@ -203,6 +253,7 @@ nav {
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
+    margin-bottom: 50px;
     letter-spacing: .095em;
 }
 
@@ -366,13 +417,13 @@ nav {
 }
 
 .title {
-    font-size: 50px;
     margin-top: 122px;
 }
 
 .title a {
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 50px;
     letter-spacing: 0;
 }
 
@@ -462,7 +513,6 @@ nav {
 }
 
 .text-4 {
-    font-size: 50px;
     margin-left: 153px;
     margin-top: 138px;
 }
@@ -470,6 +520,7 @@ nav {
 .text-4 a {
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 50px;
     letter-spacing: -2px;
 }
 
@@ -567,13 +618,13 @@ nav {
 }
 
 .title5 {
-    font-size: 50px;
     margin-top: 122px;
 }
 
 .title5 a {
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 50px;
     letter-spacing: -2px;
 }
 
@@ -687,7 +738,7 @@ nav {
 .product-img {
     width: 170px;
     position: absolute;
-    top: -90px;
+    top: -65px;
     left: 50%;
     z-index: -1;
     overflow: visible;
@@ -753,7 +804,6 @@ nav {
 .cart-btn img {
     height: 33px;
     width: 36px;
-    margin-left: 14px;
 }
 
 .buy-btn {
@@ -1046,8 +1096,12 @@ nav {
     font-size: 14px;
 }
 
+.left-8 a {
+    color: white;
+}
+
 .left-8 button:hover {
-    background: #44ff00;
+    background: #44ff00b2;
 }
 
 .right-8 img {
@@ -1288,7 +1342,7 @@ nav {
 }
 
 .section-10 {
-    
+    margin-bottom: 100px;
 }
 
 .swiper-bg {
@@ -1298,12 +1352,429 @@ nav {
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    height: 536px;
     z-index: 0;
 }
+
+.swiper-bg:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -10px;
+    background-image: url(https://suxnix-dev.myshopify.com/cdn/shop/t/2/assets/testimonial_top_shape.png);
+    width: 100%;
+    height: 33px;
+    background-repeat: repeat;
+    background-position: center;
+    z-index: 2;
+}
+
 
 .swiper-overlay {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.7);
     z-index: 1;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-rating {
+    margin-top: 100px;
+}
+
+.img-data {
+    margin: 0 0 15px;
+}
+
+.img-data img {
+    object-fit: cover;
+    max-width: 98px;
+    border-radius: 50%;
+    display: inline;
+    height: 92px;
+    margin-top: 42px;
+}
+
+.swiper-text h6 {
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+    padding-left: 250px;
+    padding-right: 250px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.swiper-text h5 {
+    color: white;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.swiper-bg:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    background-image: url(https://suxnix-dev.myshopify.com/cdn/shop/t/2/assets/testimonial_bottom_shape.png);
+    width: 100%;
+    height: 37px;
+    background-repeat: repeat;
+    background-position: center;
+    z-index: 2;
+}
+
+.section-11 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 80px;
+    padding-top: 50px;
+    padding-right: 80px;
+    gap: 50px;
+    background: #f5f5f5;
+}
+
+.left-11 p {
+    color: #faa432;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.095em;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+.left-11 h2 {
+    font-size: 50px;
+    letter-spacing: -0.05em;
+    margin-bottom: 0;
+    font-weight: 650;
+    text-transform: uppercase;
+}
+
+.news-1 {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.news-1 img {
+    height: 130px;
+    width: 150px;
+    border-radius: 20px;
+}
+
+.date {
+    display: flex;
+    gap: 50px;
+}
+
+.date a {
+    font-weight: 500;
+}
+
+.date a:hover {
+    color: #faa432;
+}
+
+.date p {
+    color: gray;
+    text-transform: none;
+}
+
+.news-data h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 650;
+    letter-spacing: -0.05rem;
+    margin-top: 15px;
+}
+
+.news-data h3:hover {
+    color: #faa432;
+}
+
+.news-bottom {
+    margin-top: 25px;
+    justify-content: stretch;
+}
+
+.news-bottom ul {
+    display: flex;
+}
+
+.user {
+    margin-right: 20px;
+}
+
+.user p {
+    font-size: 14px;
+    text-transform: none;
+    color: black;
+}
+
+.user a {
+    color: #faa432;
+    font-size: 16px;
+}
+
+.comments {
+    margin-left: 8px;
+    margin-right: 20px;
+}
+
+.comments p {
+    color: gray;
+    font-size: 18px;
+    margin-top: -4px;
+}
+
+.viewers p {
+    font-size: 18px;
+    margin-top: -4px;
+    color: gray;
+}
+
+.right-11 p {
+    color: #faa432;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.right-11 h2 {
+    font-size: 50px;
+    font-weight: 650;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+}
+
+.Questions {
+    margin-left: 50px;
+    letter-spacing: -1px;
+    margin-top: 69px;
+}
+
+.Questions span {
+    color: #faa432;
+}
+
+.Questions p {
+    color: gray;
+    background: white;
+    margin-top: -4px;
+    padding: 20px 20px 20px 20px;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.Q-1 {
+    margin-top: 50px;
+    font-size: 18px;
+    border-bottom: 1px solid gray;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.Q-2 {
+    margin-top: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid gray;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.Q-3 {
+    margin-top: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid gray;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.Q-4 {
+    margin-top: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid gray;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.Q-5 {
+    margin-top: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid gray;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+.footer-1 {
+    margin-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
+.footer-next {
+    display: grid;
+    background: black;
+    color: white;
+    margin-top: -104px;
+    padding-bottom: 20px;
+}
+
+.footer-next::before {
+    content: "";
+    position: relative;
+    left: 0;
+    top: -11px;
+    width: 100%;
+    height: 53px;
+    background-image: url(https://suxnix-dev.myshopify.com/cdn/shop/t/2/assets/footer_bg_shape.png);
+    background-repeat: repeat;
+    background-position: center;
+    z-index: 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    margin-top: 150px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.logo1 {
+    height: 64px;
+    width: 168px;
+}
+
+.fot1 p {
+    margin-top: 20px;
+    color: gray;
+    width: 343px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    height: 27px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.icons {
+    display: flex;
+    background: #000;
+}
+
+.fot2 {
+    margin-left: 30px;
+}
+
+.fot2 h4 {
+    font-size: 20px;
+    letter-spacing: .02em;
+    margin: 0 0 25px;
+    font-weight: 650;
+    text-transform: uppercase;
+}
+
+.fot2 li {
+    margin-bottom: 12px;
+    font-weight: 550;
+    color: gray;
+}
+
+.fot3 h4 {
+    font-size: 20px;
+    letter-spacing: .02em;
+    margin: 0 0 25px;
+    font-weight: 650;
+    text-transform: uppercase;
+}
+
+.fot3 li {
+    margin-bottom: 12px;
+    font-weight: 550;
+    color: gray;
+}
+
+
+.fot4 h4 {
+    font-size: 20px;
+    letter-spacing: .02em;
+    margin: 0 0 25px;
+    font-weight: 650;
+    text-transform: uppercase;
+}
+
+.fot4 p {
+    color: gray;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+
+.contact p {
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+}
+
+.contact img {
+    height: 19px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.footer-left {
+    position: absolute;
+    left: 0;
+}
+
+.footer-right {
+    position: absolute;
+    right: 0;
+}
+
+.last-footer {
+    border-top: 0.003px solid white;
+    display: flex;
+    margin-top: 100px;
+}
+
+.left-last {
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.right-last {
+    position: absolute;
+    margin-top: 21px;
+    right: 66px;
 }
