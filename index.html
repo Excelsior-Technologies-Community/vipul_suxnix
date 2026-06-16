@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suxnix dev</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="nav-1">
             <div>
                 <img class="logo" src="https://suxnix-dev.myshopify.com/cdn/shop/files/logo.png?v=1735561122" alt="">
             </div>
@@ -32,9 +33,9 @@
                 <a href="#">Product</a>
                 <a href="#">Ingridients</a>
                 <a href="#">Pricing</a>
-                <a href="#">Shop
+                <a href="#">
                     <li class="dropdown">
-
+                        <a href="#">Shop</a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Our Shop</a></li>
                             <li><a href="#">Shop Details</a></li>
@@ -44,9 +45,9 @@
                         </ul>
                     </li>
                 </a>
-                <a href="#">News
+                <a href="#">
                     <li class="dropdown">
-
+                        <a href="#">News</a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Our Blog</a></li>
                             <li><a href="#">Blog Details</a></li>
@@ -62,7 +63,72 @@
                 <a href="#"><img class="search"
                         src="https://img.icons8.com/?size=100&id=e4NkZ7kWAD7f&format=png&color=000000" alt=""></a>
                 <button><img class="menu-icon"
-                        src="https://img.icons8.com/?size=100&id=ygCVUE4AITXJ&format=png&color=000000" alt=""></button>
+                        src="https://img.icons8.com/?size=100&id=vxOr7mumH0q9&format=png&color=FFFFFF" alt=""></button>
+            </div>
+        </nav>
+        <nav class="nav-2">
+            <div>
+                <img class="logo" src="https://suxnix-dev.myshopify.com/cdn/shop/files/logo.png?v=1735561122" alt="">
+            </div>
+            <div class="nav-right">
+                <a href="#"><img class="shoping-cart"
+                        src="https://img.icons8.com/?size=100&id=Ot2P5D5MPltM&format=png&color=000000" alt=""></a>
+                <a href="#"><img class="search"
+                        src="https://img.icons8.com/?size=100&id=e4NkZ7kWAD7f&format=png&color=000000" alt=""></a>
+                <button>
+                    <div class="menu-btn" onclick="openMenu()">
+                        <img class="menu-icon"
+                            src="https://img.icons8.com/?size=100&id=vxOr7mumH0q9&format=png&color=FFFFFF" alt="">
+                    </div>
+
+                    <div class="sidebar" id="sidebar">
+                        <div class="close-btn" onclick="closeMenu()">✖</div>
+                        <div class="sidebar-logo"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/logo.png?v=1735561122" alt="">
+                        </div>
+                        <div class="menu-item" onclick="toggleAbout()">
+                            Home <span id="arrow">⌄</span>
+                        </div>
+
+                        <div class="submenu" id="aboutMenu">
+                            <a href="#">Home One</a>
+                            <a href="#">Home Two</a>
+                            <a href="#">Home Three</a>
+                        </div>
+                        <a href="#">Features</a>
+                        <a href="#">Product</a>
+                        <a href="#">Ingridients</a><a href="#">Pricing</a>
+                        <div class="menu-item" onclick="togglePages()">
+                            Shop <span id="pagesArrow">⌄</span>
+                        </div>
+
+                        <div class="submenu" id="pagesMenu">
+                            <a href="#">Our Shop</a>
+                            <a href="#">Shop Details</a>
+                            <a href="#">Cart Page</a>
+                            <a href="#">Login Page</a>
+                            <a href="#">Register</a>
+                        </div>
+                        <div class="menu-item" onclick="togglePages()">
+                            News <span id="pagesArrow">⌄</span>
+                        </div>
+
+                        <div class="submenu" id="pagesMenu">
+                            <a href="#">Our Blog</a>
+                            <a href="#">Blog Details</a>
+                        </div>
+                        <a href="#">Pricing</a>
+                        <a href="#">FAQs</a>
+
+                        <div class="images">
+                            <img src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000" alt="">
+                            <img src="https://img.icons8.com/?size=100&id=60014&format=png&color=000000" alt="">
+                            <img src="https://img.icons8.com/?size=100&id=59813&format=png&color=000000" alt="">
+                            <img src="https://img.icons8.com/?size=100&id=85162&format=png&color=000000" alt="">
+                            <img src="https://img.icons8.com/?size=100&id=j5n4WPnMXIQZ&format=png&color=000000" alt="">
+                        </div>
+                    </div>
+                </button>
             </div>
         </nav>
     </header>
@@ -105,28 +171,107 @@
     </section>
     <div class="container1">
         <p>Perfect Brand is Featured on</p>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img
-                        src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_03.png?v=1736574801" alt=""></div>
-                <div class="swiper-slide"><img
-                        src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_01.png?v=1736574801" alt=""></div>
-                <div class="swiper-slide"><img
-                        src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_06.png?v=1736574801" alt=""></div>
-                <div class="swiper-slide"><img
-                        src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_04.png?v=1736574801" alt=""></div>
-                <div class="swiper-slide"><img
-                        src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_06.png?v=1736574801" alt=""></div>
-                <div class="swiper-slide"><img
-                        src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_02.png?v=1736574801" alt=""></div>
-                <div class="swiper-slide"><img
-                        src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_05.png?v=1736574801" alt=""></div>
-                <div class="swiper-slide"><img
-                        src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_02.png?v=1736574801" alt=""></div>
-                <div class="swiper-slide"><img
-                        src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_06.png?v=1736574801" alt=""></div>
+        <div class="swiper-1">
+            <div class="swiper mySwiper ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_03.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_01.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_06.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_04.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_06.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_02.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_05.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_02.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_06.png?v=1736574801" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-2">
+            <div class="swiper mySwiper4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_03.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_01.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_06.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_04.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_06.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_02.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_05.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_02.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_06.png?v=1736574801" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="swiper-3">
+            <div class="swiper mySwiper7">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_03.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_01.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_06.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_04.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_06.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_02.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_05.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_02.png?v=1736574801" alt="">
+                    </div>
+                    <div class="swiper-slide "><img
+                            src="https://suxnix-dev.myshopify.com/cdn/shop/files/brand_06.png?v=1736574801" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
     </div>
 
@@ -199,7 +344,7 @@
             <p>Vitamin D3 supplements are commonly recommended for people at risk for vitamin D deficiency. Low vitamin
                 D levels cause depression, fatigue, and muscle weakness.</p>
             <div class="product-btn1">
-                <button class="shop-btn1">Shop Now</button>
+                <button class="shop-btn1 btn2">Shop Now</button>
                 <span class="new-price">
                     $59.99 <span class="old-price">$79.99</span>
                 </span>
@@ -406,6 +551,335 @@
 
     </section>
 
+    <section class="swiper-container1">
+        <div class="swiper mySwiper5">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="margin-right: 0px;">
+                    <div class="home-shop-item">
+                        <div class="card">
+
+                            <div class="top-shape1">
+                                <img src="https://suxnix-dev.myshopify.com/cdn/shop/files/home_shop_thumb03.png?v=1738166815"
+                                    class="product-img">
+                            </div>
+
+                            <div class="content">
+
+                                <h2>Box Full of Muscles</h2>
+
+                                <div class="price">Tk 85.99</div>
+
+                                <div class="rating">
+                                    <span class="stars">★★★★⯪</span>
+
+                                    <span>(30)</span>
+                                </div>
+
+                                <div class="buttons">
+
+                                    <button class="cart-btn">
+                                        <img src="https://img.icons8.com/?size=32&id=51431&format=png" alt="">
+                                    </button>
+
+                                    <button class="buy-btn">
+                                        Buy Now
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide" style="margin-right: 0px;">
+                    <div class="home-shop-item">
+                        <div class="card">
+
+                            <div class="top-shape2">
+                                <img src="https://suxnix-dev.myshopify.com/cdn/shop/files/home_shop_thumb04.png?v=1738166199"
+                                    class="product-img">
+                            </div>
+
+                            <div class="content">
+
+                                <h2>Protein Powder 2kg</h2>
+
+                                <div class="price">Tk 85.99</div>
+
+                                <div class="rating">
+                                    <span class="stars">★★★★⯪</span>
+
+                                    <span>(30)</span>
+                                </div>
+
+                                <div class="buttons">
+
+                                    <button class="cart-btn">
+                                        <img src="https://img.icons8.com/?size=32&id=51431&format=png" alt="">
+                                    </button>
+
+                                    <button class="buy-btn">
+                                        Buy Now
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide" style="margin-right: 0px;">
+                    <div class="home-shop-item">
+                        <div class="card">
+
+                            <div class="top-shape3">
+                                <img src="https://suxnix-dev.myshopify.com/cdn/shop/files/home_shop_thumb02.png?v=1738166857"
+                                    class="product-img">
+                            </div>
+
+                            <div class="content">
+
+                                <h2>Whey Protein Powder</h2>
+
+                                <div class="price">Tk 49.99</div>
+
+                                <div class="rating">
+                                    <span class="stars">★★★★⯪</span>
+
+                                    <span>(30)</span>
+                                </div>
+
+                                <div class="buttons">
+
+                                    <button class="cart-btn">
+                                        <img src="https://img.icons8.com/?size=32&id=51431&format=png" alt="">
+                                    </button>
+
+                                    <button class="buy-btn">
+                                        Buy Now
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide" style="margin-right: 0px;">
+                    <div class="home-shop-item">
+                        <div class="card">
+
+                            <div class="top-shape4">
+                                <img src="https://suxnix-dev.myshopify.com/cdn/shop/files/home_shop_thumb01.png?v=1737721978"
+                                    class="product-img">
+                            </div>
+
+                            <div class="content">
+
+                                <h2>Antiaging and Longevity</h2>
+
+                                <div class="price">Tk 49.99</div>
+
+                                <div class="rating">
+                                    <span class="stars">★★★★⯪</span>
+
+                                    <span>(30)</span>
+                                </div>
+
+                                <div class="buttons">
+
+                                    <button class="cart-btn">
+                                        <img src="https://img.icons8.com/?size=32&id=51431&format=png" alt="">
+                                    </button>
+
+                                    <button class="buy-btn">
+                                        Buy Now
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+    <section class="swiper-container2">
+        <div class="swiper mySwiper8">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="home-shop-item">
+                        <div class="card">
+
+                            <div class="top-shape1">
+                                <img src="https://suxnix-dev.myshopify.com/cdn/shop/files/home_shop_thumb03.png?v=1738166815"
+                                    class="product-img">
+                            </div>
+
+                            <div class="content">
+
+                                <h2>Box Full of Muscles</h2>
+
+                                <div class="price">Tk 85.99</div>
+
+                                <div class="rating">
+                                    <span class="stars">★★★★⯪</span>
+
+                                    <span>(30)</span>
+                                </div>
+
+                                <div class="buttons">
+
+                                    <button class="cart-btn">
+                                        <img src="https://img.icons8.com/?size=32&id=51431&format=png" alt="">
+                                    </button>
+
+                                    <button class="buy-btn">
+                                        Buy Now
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="home-shop-item">
+                        <div class="card">
+
+                            <div class="top-shape2">
+                                <img src="https://suxnix-dev.myshopify.com/cdn/shop/files/home_shop_thumb04.png?v=1738166199"
+                                    class="product-img">
+                            </div>
+
+                            <div class="content">
+
+                                <h2>Protein Powder 2kg</h2>
+
+                                <div class="price">Tk 85.99</div>
+
+                                <div class="rating">
+                                    <span class="stars">★★★★⯪</span>
+
+                                    <span>(30)</span>
+                                </div>
+
+                                <div class="buttons">
+
+                                    <button class="cart-btn">
+                                        <img src="https://img.icons8.com/?size=32&id=51431&format=png" alt="">
+                                    </button>
+
+                                    <button class="buy-btn">
+                                        Buy Now
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="home-shop-item">
+                        <div class="card">
+
+                            <div class="top-shape3">
+                                <img src="https://suxnix-dev.myshopify.com/cdn/shop/files/home_shop_thumb02.png?v=1738166857"
+                                    class="product-img">
+                            </div>
+
+                            <div class="content">
+
+                                <h2>Whey Protein Powder</h2>
+
+                                <div class="price">Tk 49.99</div>
+
+                                <div class="rating">
+                                    <span class="stars">★★★★⯪</span>
+
+                                    <span>(30)</span>
+                                </div>
+
+                                <div class="buttons">
+
+                                    <button class="cart-btn">
+                                        <img src="https://img.icons8.com/?size=32&id=51431&format=png" alt="">
+                                    </button>
+
+                                    <button class="buy-btn">
+                                        Buy Now
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="home-shop-item">
+                        <div class="card">
+
+                            <div class="top-shape4">
+                                <img src="https://suxnix-dev.myshopify.com/cdn/shop/files/home_shop_thumb01.png?v=1737721978"
+                                    class="product-img">
+                            </div>
+
+                            <div class="content">
+
+                                <h2>Antiaging and Longevity</h2>
+
+                                <div class="price">Tk 49.99</div>
+
+                                <div class="rating">
+                                    <span class="stars">★★★★⯪</span>
+
+                                    <span>(30)</span>
+                                </div>
+
+                                <div class="buttons">
+
+                                    <button class="cart-btn">
+                                        <img src="https://img.icons8.com/?size=32&id=51431&format=png" alt="">
+                                    </button>
+
+                                    <button class="buy-btn">
+                                        Buy Now
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
     <section class="section-6">
         <div class="video-bg">
             <div class="video-overlay"></div>
@@ -433,29 +907,39 @@
         </div>
 
     </section>
-    <div class="fact-area">
-        <div class="fact-item">
-            <div class="fact-chart" style="---value:234deg"><span>65 <small>%</small></span></div>
-            <div class="fact-data">
-                <h4>Active Members</h4>
+    <section class="progress-wrapper">
+
+        <div class="progress-box">
+            <div class="progress-circle" style="--value:234deg;">
+                <span>65%</span>
+            </div>
+            <div class="progress-content">
+                <h3>ACTIVE MEMBERS</h3>
                 <p>Yes we did it asap software</p>
             </div>
         </div>
-        <div class="fact-item">
-            <div class="fact-chart"><span>90 <small>%</small></span></div>
-            <div class="fact-data">
-                <h4>Projects Done</h4>
+
+        <div class="progress-box">
+            <div class="progress-circle" style="--value:324deg;">
+                <span>90%</span>
+            </div>
+            <div class="progress-content">
+                <h3>PROJECTS DONE</h3>
                 <p>Yes we did it asap software</p>
             </div>
         </div>
-        <div class="fact-item">
-            <div class="fact-chart"><span>80 <small>%</small></span></div>
-            <div class="fact-data">
-                <h4>Get Rewards</h4>
+
+        <div class="progress-box box3">
+            <div class="progress-circle" style="--value:288deg;">
+                <span>80%</span>
+            </div>
+            <div class="progress-content">
+                <h3>GET REWARDS</h3>
                 <p>Yes we did it asap software</p>
             </div>
         </div>
-    </div>
+
+    </section>
 
     <section class="section-7">
         <div class="left-7"><img class="main-img"
@@ -560,9 +1044,9 @@
                     </button>
                 </div>
             </div>
-            <div class="card-2">
+            <div class="card-2 card-3">
                 <h4 class="plan2">✓ Best Value</h4>
-                <div class="offer-card1">
+                <div class="offer-card1 offer-card3">
                     <span>1 Bottle Of</span>
                     <h3>Suxnix</h3>
                     <p>(1 x 250 veggie caps bottle)</p>
@@ -800,6 +1284,80 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
+            <div class="img-swiper1">
+                <div class="swiper mySwiper6">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/instagram_post05_076fdf6c-6ffe-45f7-8388-6900702b3b4b.jpg?v=1737134471"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/instagram_post06_ec34de05-56ce-4943-96eb-fdbc6f239030.jpg?v=1737134471"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/instagram_post02_a85b661a-67ea-4a36-ad29-c9e84ee797ae.jpg?v=1737134121"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/instagram_post03_8902567f-4641-4a0d-8a5d-d9ab44870ead.jpg?v=1737134471"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/instagram_post04_f36edf63-f2ee-407c-ad8f-24edd6fcf69d.jpg?v=1737134471"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/instagram_post05_076fdf6c-6ffe-45f7-8388-6900702b3b4b.jpg?v=1737134471"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/instagram_post06_ec34de05-56ce-4943-96eb-fdbc6f239030.jpg?v=1737134471"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/instagram_post02_a85b661a-67ea-4a36-ad29-c9e84ee797ae.jpg?v=1737134121"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/instagram_post03_8902567f-4641-4a0d-8a5d-d9ab44870ead.jpg?v=1737134471"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/instagram_post04_f36edf63-f2ee-407c-ad8f-24edd6fcf69d.jpg?v=1737134471"
+                                alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="img-swiper2">
+                <div class="swiper mySwiper9">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/instagram_post05_076fdf6c-6ffe-45f7-8388-6900702b3b4b.jpg?v=1737134471"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/instagram_post06_ec34de05-56ce-4943-96eb-fdbc6f239030.jpg?v=1737134471"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/instagram_post02_a85b661a-67ea-4a36-ad29-c9e84ee797ae.jpg?v=1737134121"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/instagram_post03_8902567f-4641-4a0d-8a5d-d9ab44870ead.jpg?v=1737134471"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/instagram_post04_f36edf63-f2ee-407c-ad8f-24edd6fcf69d.jpg?v=1737134471"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/instagram_post05_076fdf6c-6ffe-45f7-8388-6900702b3b4b.jpg?v=1737134471"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/instagram_post06_ec34de05-56ce-4943-96eb-fdbc6f239030.jpg?v=1737134471"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/instagram_post02_a85b661a-67ea-4a36-ad29-c9e84ee797ae.jpg?v=1737134121"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/instagram_post03_8902567f-4641-4a0d-8a5d-d9ab44870ead.jpg?v=1737134471"
+                                alt=""></div>
+                        <div class="swiper-slide"><img
+                                src="https://suxnix-dev.myshopify.com/cdn/shop/files/instagram_post04_f36edf63-f2ee-407c-ad8f-24edd6fcf69d.jpg?v=1737134471"
+                                alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </div>
         <div class="footer-next">
             <div class="footer-content">
@@ -919,4 +1477,111 @@
             disableOnInteraction: false,
         },
     });
+</script>
+
+<script>
+    var swiper = new Swiper(".mySwiper4", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+</script>
+<script>
+    var swiper = new Swiper(".mySwiper5", {
+        slidesPerView: 2,
+        spaceBetween: 25,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+</script>
+<script>
+    var swiper = new Swiper(".mySwiper6", {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+</script>
+<script>
+    var swiper = new Swiper(".mySwiper7", {
+        slidesPerView: 2,
+        spaceBetween: 25,
+        // loop: true,
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        // },
+    });
+</script>
+<script>
+    var swiper = new Swiper(".mySwiper8", {
+        slidesPerView: 1,
+        spaceBetween: 25,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+</script>
+<script>
+    var swiper = new Swiper(".mySwiper9", {
+        slidesPerView: 2,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+</script>
+<script>
+    function openMenu() {
+        document.getElementById("sidebar").classList.add("active");
+    }
+
+    function closeMenu() {
+        document.getElementById("sidebar").classList.remove("active");
+    }
+</script>
+<script>
+    function toggleAbout() {
+        document.getElementById("aboutMenu").classList.toggle("show");
+        document.getElementById("arrow").classList.toggle("rotate");
+    }
+</script>
+<script>
+    function togglePages() {
+        document.getElementById("pagesMenu").classList.toggle("show");
+        document.getElementById("pagesArrow").classList.toggle("rotate");
+    }
+</script>
+<script>
+
+    const header = document.querySelector(".header");
+
+    window.addEventListener("scroll", () => {
+
+        if (window.scrollY > 50) {
+
+            header.classList.add("active");
+
+        } else {
+
+            header.classList.remove("active");
+
+        }
+
+    });
+
 </script>
